@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  background-color: cornsilk;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 20px; /* Space around the container */
+  padding: 20px; /* Space inside the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  max-width: 43rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  position: relative; /* Ensure positioning context for children */
+  width: 100%;
+  height: 100%; /* Ensure it takes full height of the grid cell */
+  overflow: hidden; /* Hide overflow for clean edges */
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without gaps */
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Pro-type {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #6e6962;
+  text-transform: uppercase;
+}
+
+.pro-name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.pro-des {
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.current-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #407F69;
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.cta {
+  background-color: #407F69;
+  color: #faf3f3;
+  border: none;
+  padding: 12px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.cta img {
+  width: 20px;
+}
+
+.cta:hover {
+  background-color: #ee0b0b;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .pro-name {
+    font-size: 25px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  background-color: cornsilk;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 20px; /* Space around the container */
+  padding: 20px; /* Space inside the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  max-width: 43rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  position: relative; /* Ensure positioning context for children */
+  width: 100%;
+  height: 100%; /* Ensure it takes full height of the grid cell */
+  overflow: hidden; /* Hide overflow for clean edges */
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without gaps */
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Pro-type {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #6e6962;
+  text-transform: uppercase;
+}
+
+.pro-name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.pro-des {
+  font-family: "Montserrat", sans-serif;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.current-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #407F69;
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.cta {
+  background-color: #407F69;
+  color: #faf3f3;
+  border: none;
+  padding: 12px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.cta img {
+  width: 20px;
+}
+
+.cta:hover {
+  background-color: #ee0b0b;
+}
+
+@media (max-width: 375px) {
+    .grid {
+      grid-template-columns: 1fr;
+      max-width: 100%; /* Ensure the grid takes full width on smaller screens */
+    }
+    
+    .img {
+      height: 200px; /* Adjust height to fit better on small screens */
+    }
+    
+    .pro-name {
+      font-size: 20px; /* Adjust font size for better readability on small screens */
+    }
+  
+    .card-content {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
